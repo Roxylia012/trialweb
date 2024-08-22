@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://9000-idx-trialweb-1722160970754.cluster-nx3nmmkbnfe54q3dd4pfbgilpc.cloudworkstations.dev'),
 
     /*
     |--------------------------------------------------------------------------

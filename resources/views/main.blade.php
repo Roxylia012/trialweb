@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard DPKA UB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         .sidebar {
-            background-color: #2c3e50;
+            background-color: #1C3659;
             width: 250px;
             height: 100vh;
             position: fixed;
@@ -103,8 +104,14 @@
     </style>
 </head>
 <body>
+    <nav class="navbar sticky-top" style="background-color: #1C2659;" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">
+        <img src="{{ asset('images/logo.png') }}" alt="DPKA" style="height:3rem;">
+        </a>
+    </div>
+    </nav>
     <div class="sidebar">
-        <h1>DPKA UB</h1>
         <ul>
             <li>Dashboard</li>
             <li>Newsletter Mahasiswa</li>
@@ -115,11 +122,7 @@
         </ul>
     </div>
     <div class="main-content">
-        <div class="header">
-            <h2>Dashboard</h2>
-            <div class="user-icon"></div>
-        </div>
-        <div class="stats">
+        <div class="stats d-flex justify-content-end">
             <div class="stat">
                 <h3>Total Template</h3>
                 <p>66</p>
@@ -151,9 +154,15 @@
                         <td>Passion Kuliah Bisa Cuan</td>
                         <td>01/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-edit">Edit</button>
+                                    <button class="btn btn-view">View</button>
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class="btn btn-delete">Delete</button>
+                                </div>
+                            </div>
                         </td>
                     </tr>
                     <tr>
@@ -164,9 +173,15 @@
                         <td>Tingkatkan Wawasan Literasimu</td>
                         <td>07/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                     <tr>
@@ -177,9 +192,15 @@
                         <td>Kenaikan Isa Al Masih</td>
                         <td>09/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                     <tr>
@@ -190,9 +211,15 @@
                         <td>Beasiswa S2 Luar Negeri</td>
                         <td>16/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                     <tr>
@@ -203,9 +230,15 @@
                         <td>Lowongan Kerja BUMN</td>
                         <td>23/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                     <tr>
@@ -216,9 +249,15 @@
                         <td>Hari Raya Waisak</td>
                         <td>23/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                     <tr>
@@ -229,14 +268,21 @@
                         <td>Open Class Microsoft</td>
                         <td>28/05/2024</td>
                         <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-view">View</button>
-                            <button class="btn btn-delete">Delete</button>
+                            <div class="container">
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn btn-edit">Edit</button>
+                                        <button class="btn btn-view">View</button>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <button class="btn btn-delete">Delete</button>
+                                    </div>
+                                </div>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
