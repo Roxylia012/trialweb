@@ -6,6 +6,10 @@ body {
     min-height: 90vh;
     font-family: sans-serif;
 }
+
+.image-container {
+    text-align: center;
+}
 .login-container {
     background-color: #1C3959;
     padding: 30px;

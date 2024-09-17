@@ -4,154 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Newsletter Alumni</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f2f5;
+            background-color: #ffffff;
         }
-
-        .container {
-            display: flex;
-        }
-
         .sidebar {
+            background-color: #1C3659;
             width: 250px;
-            background-color: #2c3e50;
-            color: #ecf0f1;
             height: 100vh;
+            position: fixed;
+            color: white;
             padding-top: 20px;
         }
-
-        .sidebar .logo {
+        .sidebar h1 {
             text-align: center;
-            margin-bottom: 20px;
+            font-size: 24px;
+            margin-bottom: 30px;
         }
-
-        .sidebar .logo img {
-            width: 100px;
-        }
-
         .sidebar ul {
             list-style: none;
             padding: 0;
         }
-
         .sidebar ul li {
             padding: 15px 20px;
         }
-
-        .sidebar ul li a {
-            color: #ecf0f1;
-            text-decoration: none;
-            display: block;
-        }
-
-        .sidebar ul li a:hover,
-        .sidebar ul li.active a {
+        .sidebar ul li:hover {
             background-color: #34495e;
+            cursor: pointer;
         }
-
         .main-content {
-            flex-grow: 1;
-            background-color: #fff;
+            margin-left: 250px;
             padding: 20px;
         }
-
-        .main-content header {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 20px;
         }
-
-        .main-content header h1 {
-            margin: 0;
-        }
-
-        .profile-icon img {
-            width: 40px;
+        .header .user-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #34495e;
             border-radius: 50%;
         }
-
-        .form-group {
-            margin-bottom: 15px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #34495e;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .news-section {
-            margin-bottom: 30px;
-        }
-
-        .news-section h2 {
-            color: #34495e;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
+        h2 {
+            color: #2c3e50;
             margin-bottom: 20px;
         }
-
-        .form-actions {
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="file"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+        }
+        .btn-container {
             display: flex;
             justify-content: flex-end;
             gap: 10px;
         }
-
-        .save-button,
-        .preview-button {
-            padding: 10px 20px;
+        .btn {
+            padding: 10px 15px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
-
-        .save-button {
-            background-color: #2ecc71;
-            color: #fff;
+        .btn-save {
+            background-color: #27ae60;
+            color: white;
         }
-
-        .preview-button {
+        .btn-preview {
             background-color: #3498db;
-            color: #fff;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar">
-            <div class="logo">
-                <img src="path_to_logo" alt="DPKA UB Logo">
-                <h2>DPKA UB</h2>
-            </div>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Newsletter Mahasiswa</a></li>
-                <li class="active"><a href="#">Newsletter Alumni</a></li>
-                <li><a href="#">Ucapan Hari Besar</a></li>
-                <li><a href="#">Informasi Lowongan</a></li>
-                <li><a href="#">Download</a></li>
-            </ul>
+    <nav class="navbar sticky-top" style="background-color: #1C2659;" >
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">
+            <img src="{{ asset('images/logo.png') }}" alt="DPKA" style="height:3rem;">
+            </a>
+        </div>
         </nav>
-        <div class="main-content">
-            <header>
-                <h1>Create Newsletter Alumni</h1>
-                <div class="profile-icon">
-                    <img src="path_to_profile_icon" alt="Profile Icon">
-                </div>
-            </header>
-            <form>
+        <div class="sidebar">
+        <ul>
+            <li><a href="/home">Dashboard</a></li>
+            <li><a href="/nmhs">Newsletter Mahasiswa</a></li>
+            <li><a href="/nalm">Newsletter Alumni</a></li>
+            <li><a href="/uhb">Ucapan Hari Besar</a></li>
+            <li><a href="/ilo">Informasi Lowongan</a></li>
+            <li><a href="/download">Download</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <h2>Create Newsletter Alumni</h2>
+        </div>
+        <form>
             <label for="bulan">Bulan</label>
             <select id="bulan" name="bulan">
                 <option>Jan</option>
@@ -177,87 +141,50 @@
                 <option>2029</option>
                 <option>2030</option>
             </select>
-                <div class="news-section">
-                    <h2>Berita Utama</h2>
-                    <div class="form-group">
-                        <label for="judul-berita-utama">Judul Berita</label>
-                        <input type="text" id="judul-berita-utama" name="judul-berita-utama">
-                    </div>
-                    <div class="form-group">
-                        <label for="link-berita-utama">Link Berita</label>
-                        <input type="text" id="link-berita-utama" name="link-berita-utama">
-                    </div>
-                    <div class="form-group">
-                        <label for="url-gambar-utama">URL Gambar</label>
-                        <input type="text" id="url-gambar-utama" name="url-gambar-utama">
-                    </div>
-                </div>
-                <div class="news-section">
-                    <h2>Berita 1</h2>
-                    <div class="form-group">
-                        <label for="judul-berita-1">Judul Berita</label>
-                        <input type="text" id="judul-berita-1" name="judul-berita-1">
-                    </div>
-                    <div class="form-group">
-                        <label for="link-berita-1">Link Berita</label>
-                        <input type="text" id="link-berita-1" name="link-berita-1">
-                    </div>
-                    <div class="form-group">
-                        <label for="url-gambar-1">URL Gambar</label>
-                        <input type="text" id="url-gambar-1" name="url-gambar-1">
-                    </div>
-                </div>
-                <div class="news-section">
-                    <h2>Berita 2</h2>
-                    <div class="form-group">
-                        <label for="judul-berita-2">Judul Berita</label>
-                        <input type="text" id="judul-berita-2" name="judul-berita-2">
-                    </div>
-                    <div class="form-group">
-                        <label for="link-berita-2">Link Berita</label>
-                        <input type="text" id="link-berita-2" name="link-berita-2">
-                    </div>
-                    <div class="form-group">
-                        <label for="url-gambar-2">URL Gambar</label>
-                        <input type="text" id="url-gambar-2" name="url-gambar-2">
-                    </div>
-                </div>
-                <div class="news-section">
-                    <h2>Berita 3</h2>
-                    <div class="form-group">
-                        <label for="judul-berita-3">Judul Berita</label>
-                        <input type="text" id="judul-berita-3" name="judul-berita-3">
-                    </div>
-                    <div class="form-group">
-                        <label for="link-berita-3">Link Berita</label>
-                        <input type="text" id="link-berita-3" name="link-berita-3">
-                    </div>
-                    <div class="form-group">
-                        <label for="url-gambar-3">URL Gambar</label>
-                        <input type="text" id="url-gambar-3" name="url-gambar-3">
-                    </div>
-                </div>
-                <div class="news-section">
-                    <h2>Berita 4</h2>
-                    <div class="form-group">
-                        <label for="judul-berita-4">Judul Berita</label>
-                        <input type="text" id="judul-berita-4" name="judul-berita-4">
-                    </div>
-                    <div class="form-group">
-                        <label for="link-berita-4">Link Berita</label>
-                        <input type="text" id="link-berita-4" name="link-berita-4">
-                    </div>
-                    <div class="form-group">
-                        <label for="url-gambar-4">URL Gambar</label>
-                        <input type="text" id="url-gambar-4" name="url-gambar-4">
-                    </div>
-                </div>
-                <div class="form-actions">
-                    <button type="submit" class="save-button">Save</button>
-                    <button type="button" class="preview-button">Preview</button>
-                </div>
-            </form>
-        </div>
+            <h3>Berita Utama</h3>
+            <label for="judul">Judul Berita</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Berita">
+            <label for="link">Link Berita</label>
+            <input type="text" id="link" name="link" placeholder="Link Berita">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+
+            <h3>Berita 1</h3>
+            <label for="judul">Judul Berita</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Berita">
+            <label for="link">Link Berita</label>
+            <input type="text" id="link" name="link" placeholder="Link Berita">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+
+            <h3>Berita 2</h3>
+            <label for="judul">Judul Berita</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Berita">
+            <label for="link">Link Berita</label>
+            <input type="text" id="link" name="link" placeholder="Link Berita">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+
+            <h3>Berita 3</h3>
+            <label for="judul">Judul Berita</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Berita">
+            <label for="link">Link Berita</label>
+            <input type="text" id="link" name="link" placeholder="Link Berita">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+
+            <h3>Berita 4</h3>
+            <label for="judul">Judul Berita</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Berita">
+            <label for="link">Link Berita</label>
+            <input type="text" id="link" name="link" placeholder="Link Berita">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+                <button type="button" class="btn btn-save">Save</button>
+                <button type="button" class="btn btn-preview">Preview</button>
+            </div>
+        </form>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

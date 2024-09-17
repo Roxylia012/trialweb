@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Newsletter Mahasiswa</title>
+    <title>Informasi Lowongan</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
@@ -113,7 +113,7 @@
     </div>
     <div class="main-content">
         <div class="header">
-            <h2>Create Newsletter Mahasiswa</h2>
+            <h2>Informasi Lowongan</h2>
         </div>
         <form>
             <label for="bulan">Bulan</label>
@@ -141,15 +141,31 @@
                 <option>2029</option>
                 <option>2030</option>
             </select>
-            <h3>Event</h3>
-            <label for="judul">Judul Kegiatan</label>
-            <input type="text" id="judul" name="judul" placeholder="Judul Kegiatan">
-            <label for="link">Link Kegiatan</label>
-            <input type="text" id="link" name="link" placeholder="Link Kegiatan">
-            <label for="gambar">Gambar Kegiatan</label>
+            <h3>Informasi Lowongan</h3>
+            <label for="judul">Judul Utama</label>
+            <input type="text" id="judul" name="judul" placeholder="Judul Utama">
+            <label for="deskripsi">Deskripsi Lowongan</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Deskripsi Lowongan"></textarea>
+            <label for="gambar">Upload File</label>
             <input type="file" id="gambar" name="gambar">
-            <label for="deskripsi">Deskripsi Kegiatan</label>
-            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Deskripsi Kegiatan"></textarea>
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
+            <label for="gambar">Upload File</label>
+            <input type="file" id="gambar" name="gambar">
             <div class="btn-container">
                 <button type="button" class="btn btn-save">Save</button>
                 <button type="button" class="btn btn-preview">Preview</button>

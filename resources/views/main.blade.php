@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard DPKA UB</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -113,12 +113,12 @@
     </nav>
     <div class="sidebar">
         <ul>
-            <li>Dashboard</li>
-            <li>Newsletter Mahasiswa</li>
-            <li>Newsletter Alumni</li>
-            <li>Ucapan Hari Besar</li>
-            <li>Informasi Lowongan</li>
-            <li>Download</li>
+            <li><a href="/home">Dashboard</a></li>
+            <li><a href="/nmhs">Newsletter Mahasiswa</a></li>
+            <li><a href="/nalm">Newsletter Alumni</a></li>
+            <li><a href="/uhb">Ucapan Hari Besar</a></li>
+            <li><a href="/ilo">Informasi Lowongan</a></li>
+            <li><a href="/download">Download</a></li>
         </ul>
     </div>
     <div class="main-content">

@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Download Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
         }
         .sidebar {
-            background-color: #2c3e50;
+            background-color: #1C3659;
             width: 250px;
             height: 100vh;
             position: fixed;
@@ -96,10 +97,6 @@
             background-color: #3498db;
             color: white;
         }
-        .btn-delete {
-            background-color: #e74c3c;
-            color: white;
-        }
         .btn-download {
             background-color: #27ae60;
             color: white;
@@ -117,21 +114,26 @@
     </style>
 </head>
 <body>
+    <nav class="navbar sticky-top" style="background-color: #1C2659;" >
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">
+        <img src="{{ asset('images/logo.png') }}" alt="DPKA" style="height:3rem;">
+        </a>
+    </div>
+    </nav>
     <div class="sidebar">
-        <h1>DPKA UB</h1>
         <ul>
-            <li>Dashboard</li>
-            <li>Newsletter Mahasiswa</li>
-            <li>Newsletter Alumni</li>
-            <li>Ucapan Hari Besar</li>
-            <li>Informasi Lowongan</li>
-            <li>Download</li>
+            <li><a href="/home">Dashboard</a></li>
+            <li><a href="/nmhs">Newsletter Mahasiswa</a></li>
+            <li><a href="/nalm">Newsletter Alumni</a></li>
+            <li><a href="/uhb">Ucapan Hari Besar</a></li>
+            <li><a href="/ilo">Informasi Lowongan</a></li>
+            <li><a href="/download">Download</a></li>
         </ul>
     </div>
     <div class="main-content">
         <div class="header">
             <h2>Download</h2>
-            <div class="user-icon"></div>
         </div>
         <div class="stats">
             <div class="stat">

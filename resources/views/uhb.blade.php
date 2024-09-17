@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Newsletter Mahasiswa</title>
+    <title>Ucapan Hari Besar</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         body {
@@ -113,7 +113,7 @@
     </div>
     <div class="main-content">
         <div class="header">
-            <h2>Create Newsletter Mahasiswa</h2>
+            <h2>Ucapan Hari Besar</h2>
         </div>
         <form>
             <label for="bulan">Bulan</label>
@@ -142,15 +142,14 @@
                 <option>2030</option>
             </select>
             <h3>Event</h3>
-            <label for="judul">Judul Kegiatan</label>
-            <input type="text" id="judul" name="judul" placeholder="Judul Kegiatan">
-            <label for="link">Link Kegiatan</label>
-            <input type="text" id="link" name="link" placeholder="Link Kegiatan">
-            <label for="gambar">Gambar Kegiatan</label>
-            <input type="file" id="gambar" name="gambar">
-            <label for="deskripsi">Deskripsi Kegiatan</label>
-            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Deskripsi Kegiatan"></textarea>
-            <div class="btn-container">
+            <label for="judul">Nama Template</label>
+            <input type="text" id="judul" name="judul" placeholder="Nama Template">
+            <label for="link">Kalimat Header</label>
+            <input type="text" id="link" name="link" placeholder="Kalimat Header">
+            <label for="link">URL Gambar</label>
+            <input type="text" id="link" name="link" placeholder="URL Gambar">
+            <label for="link">Kalimat Footer</label>
+            <input type="text" id="link" name="link" placeholder="Kalimat Footer">
                 <button type="button" class="btn btn-save">Save</button>
                 <button type="button" class="btn btn-preview">Preview</button>
             </div>

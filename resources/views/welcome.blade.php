@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>DPKA UB</title>
         <link rel="stylesheet" type="text/css" href="cssdpka/login.css">
 </head>
 <body>
+    <img src="{{ asset('images/logo.png') }}" alt="DPKA" style="height:10rem;">
     <div class="login-container">
         <h2 align="center" style="color: white;"></h2>
         <form method="get" action="/home">
